@@ -32,7 +32,7 @@ document.addEventListener('codeParsed', function(e){
 }, false);
 
 // listen for messages from the background script (forwarded from our tool)
-// and forward them to our middlware via the DOM
+// and forward them to our middleware via the DOM
 chrome.runtime.onMessage.addListener((msg, sender, response) => {
 	console.log('Got a message! ', msg);
 	var evt = document.createEvent('Event');
